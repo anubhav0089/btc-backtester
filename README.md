@@ -73,9 +73,27 @@ Daily Binance data (3,344 days), 0.1% fee + 0.05% slippage per trade.
 - RSI dip buying, which looked brilliant on random demo prices, came last on
   real data.
 - The 20-day breakout beat holding on return, worst drop and Sharpe, mostly
-  by sitting in cash through the big crashes. That's one rule on one asset
-  over one period, though, so treat it as a hypothesis to test, not an edge
-  (see below).
+  by sitting in cash through the big crashes. So I stress-tested it.
+
+### Does the breakout's win hold up?
+
+| Test | Breakout | Buy and hold | Breakout wins? |
+|---|---:|---:|---|
+| Full history, 0.1% fee | $30,271 (Sharpe 1.01) | $19,073 (0.82) | yes |
+| Full history, **0.2% fee** | $28,310 (1.00) | $19,054 (0.82) | yes |
+| **From 1 Jan 2021**, 0.1% fee | $2,421 (0.57) | $2,786 (0.60) | **no** |
+
+Doubling fees barely hurt it, so costs weren't flattering it. But starting
+in 2021 it **lost to holding** on both return and Sharpe. Its whole lead
+came from 2017–2020, mostly from sitting out the 2018 crash.
+
+From 2021, *no* strategy beat holding on return. "Price above 200-day avg"
+came closest ($2,620, Sharpe 0.61 vs 0.60) with a smaller worst drop
+(−64% vs −77%), so its one real benefit was a calmer ride, not more money.
+
+**Conclusion:** the full-period winner was a product of which years I
+tested. A result that disappears when you move the start date is not an
+edge.
 
 ### Overfitting test
 
